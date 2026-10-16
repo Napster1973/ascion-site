@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ascion — Children's Comic Book · Now Hiring Artists</title>
+  <meta name="description" content="Ascion is an independent author creating a comic book for children. Now hiring illustrators and artists — students, interns, part-time and full-time." />
+  <meta property="og:title" content="Ascion — Now hiring illustrators & artists" />
+  <meta property="og:description" content="An independent children's comic book project. Students, interns, part-time and full-time artists welcome." />
+  <meta name="theme-color" content="#07062a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Reusable logo mark (the stepped "i" dot) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="mark" viewBox="0 0 40 40">
+      <path d="M22 2h14l-6 7H16z" />
+      <path d="M12 13h14l-6 7H6z" />
+      <path d="M17 24h9l-4 5h-9z" />
+    </symbol>
+  </svg>
+
+  <header class="nav" id="top">
+    <a href="#top" class="nav__logo" aria-label="Ascion home">
+      Asc<span class="i">ı<svg class="i__mark"><use href="#mark"/></svg></span>on
+    </a>
+    <nav class="nav__links">
+      <a href="#contact" class="btn btn--small">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__silk" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow"><span class="dot"></span> Now hiring illustrators &amp; artists</p>
+        <h1 class="wordmark" aria-label="Ascion">
+          Asc<span class="i">ı<svg class="i__mark"><use href="#mark"/></svg></span>on
+        </h1>
+        <p class="hero__tagline">I'm an independent author writing a comic book for children, and I'm looking for illustrators and artists to bring it to life. Students, interns, part-time or full-time: everyone is welcome.</p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="facts hero__facts">
+        <div class="fact">
+          <span class="fact__k">Project</span>
+          <span class="fact__v">Children's comic book</span>
+        </div>
+        <div class="fact">
+          <span class="fact__k">Looking for</span>
+          <span class="fact__v">Illustrators &amp; artists</span>
+        </div>
+        <div class="fact">
+          <span class="fact__k">Work</span>
+          <span class="fact__v">Remote &amp; flexible</span>
+        </div>
+        <div class="fact">
+          <span class="fact__k">Pay</span>
+          <span class="fact__v">Discussed together</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container container--narrow">
+        <div class="section__head section__head--center reveal">
+          <p class="label">Contact</p>
+          <h2>Let's make a book together.</h2>
+          <p class="lead">Tell me about yourself and share your work. Pay and details are discussed one-on-one. I read every message and reply personally.</p>
+        </div>
+
+        <form class="form reveal" id="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="role">Role</label>
+              <select id="role" name="role" required>
+                <option value="" disabled selected>Choose a role</option>
+                <option>Illustrator</option>
+                <option>Character designer</option>
+                <option>Colorist</option>
+                <option>Background artist</option>
+                <option>Inker / line artist</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="type">I'm looking for</label>
+              <select id="type" name="engagement" required>
+                <option value="" disabled selected>Choose one</option>
+                <option>Internship</option>
+                <option>Student / school project</option>
+                <option>Part-time</option>
+                <option>Full-time</option>
+                <option>Freelance</option>
+                <option>Just want more info</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="portfolio">Portfolio link <span class="opt">(optional)</span></label>
+            <input id="portfolio" name="portfolio" type="url" placeholder="https://" />
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="A few words about you, your style and your availability…"></textarea>
+          </div>
+
+          <!-- Honeypot field against spam bots -->
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+
+          <button type="submit" class="btn btn--full">Send message</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="nav__logo nav__logo--sm">Asc<span class="i">ı<svg class="i__mark"><use href="#mark"/></svg></span>on</span>
+      <p>© <span id="year"></span> Ascion · Independent children's comics</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
