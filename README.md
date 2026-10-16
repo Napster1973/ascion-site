@@ -8,7 +8,7 @@ GitHub Pages can't send email by itself, so the form uses **Formspree** (free ti
 1. Create an account at https://formspree.io and create a new form.
 2. Copy your form ID (looks like `xyzabcd`).
 3. In `index.html`, replace `YOUR_FORM_ID` in the form `action`.
-4. In `script.js`, set `CONTACT_EMAIL` to your email (used as a fallback and in error messages).
+4. In `script.js`, set `CONTACT_EMAIL` to your email (shown to visitors only if sending fails). Submissions are emailed to the target email set in Formspree.
 
 Until step 3 is done, the form opens the visitor's email app with the message pre-filled.
 
@@ -17,20 +17,24 @@ Until step 3 is done, the form opens the visitor's email app with the message pr
 2. Repo → **Settings → Pages** → Source: *Deploy from a branch* → `main` / `(root)` → Save.
 3. Under **Custom domain**, type your domain (e.g. `www.yourdomain.com`) → Save. This creates a `CNAME` file.
 
-## 3. Point your GoDaddy domain
-GoDaddy → **My Products → Domain → DNS**:
+## 3. Point the domain (Cloudflare DNS)
+Cloudflare → ascion.site → DNS → Records, all set to **DNS only** (grey cloud):
 
-| Type  | Name | Value                     |
-|-------|------|---------------------------|
-| A     | @    | 185.199.108.153           |
-| A     | @    | 185.199.109.153           |
-| A     | @    | 185.199.110.153           |
-| A     | @    | 185.199.111.153           |
-| CNAME | www  | YOUR-GITHUB-USERNAME.github.io |
+| Type  | Name | Content                 |
+|-------|------|-------------------------|
+| A     | @    | 185.199.108.153         |
+| A     | @    | 185.199.109.153         |
+| A     | @    | 185.199.110.153         |
+| A     | @    | 185.199.111.153         |
+| CNAME | www  | napster1973.github.io   |
 
-Delete any existing `A @` record (the GoDaddy "Parked" one) and any old `www` record first.
+Once GitHub's DNS check is green and the certificate is issued, tick **Enforce HTTPS** in Settings → Pages.
 
-DNS can take from a few minutes to a few hours. Once GitHub shows the domain as verified, tick **Enforce HTTPS** in Settings → Pages.
+## Updating the site
+```bash
+git add . && git commit -m "update" && git push
+```
+Live in about a minute (hard-refresh with Ctrl+Shift+R to bypass the cache).
 
 ## Editing the text
 All copy lives in `index.html`. Colors are variables at the top of `style.css`.
