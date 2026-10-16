@@ -4,7 +4,7 @@
 
 // Where messages go if the Formspree form isn't set up yet.
 // Replace with your real email address.
-const CONTACT_EMAIL = "hello@yourdomain.com";
+const CONTACT_EMAIL = "mzavattim@gmail.com";
 
 document.addEventListener("DOMContentLoaded", () => {
   /* ---- Footer year ---- */
