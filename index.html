@@ -3,179 +3,263 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ascion — Children's Comic Book · Now Hiring Artists</title>
-  <meta name="description" content="Ascion is an independent author creating a comic book for children. Now hiring illustrators and artists — students, interns, part-time and full-time." />
-  <meta property="og:title" content="Ascion — Now hiring illustrators & artists" />
-  <meta property="og:description" content="An independent children's comic book project. Students, interns, part-time and full-time artists welcome." />
-  <meta name="theme-color" content="#07062a" />
+  <title>Ascion — Children's Comic Book Agency · Paris</title>
+  <meta name="description" content="Ascion is a Paris-based media agency producing high-quality 2D comic books for children with independent authors. Now hiring illustrators." />
+  <meta property="og:title" content="Ascion — Children's comic book agency, Paris" />
+  <meta property="og:description" content="High-quality 2D comic books for children, made with independent authors. Now hiring illustrators." />
+  <meta name="theme-color" content="#ffc83d" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/hero-creature.webp" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Reusable logo mark (the stepped "i" dot) -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="mark" viewBox="0 0 40 40">
-      <path d="M22 2h14l-6 7H16z" />
-      <path d="M12 13h14l-6 7H6z" />
-      <path d="M17 24h9l-4 5h-9z" />
-    </symbol>
-  </svg>
+  <div class="progress" aria-hidden="true"><span></span></div>
 
   <header class="nav" id="top">
-    <a href="#top" class="nav__logo" aria-label="Ascion home">
-      Asc<span class="i">ı<svg class="i__mark"><use href="#mark"/></svg></span>on
+    <a href="#top" class="logo" aria-label="Ascion home">
+      <img src="images/logo-ink.png" width="720" height="184" alt="Ascion" />
     </a>
     <nav class="nav__links">
+      <a href="#who">Who we are</a>
+      <a href="#team">Team</a>
+      <a href="#hiring">We're hiring</a>
       <a href="#contact" class="btn btn--small">Contact</a>
     </nav>
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="hero__silk" aria-hidden="true"></div>
-      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__rays" aria-hidden="true"></div>
+      <div class="hero__dots" aria-hidden="true"></div>
 
-      <div class="hero__content">
-        <p class="eyebrow"><span class="dot"></span> Now hiring illustrators &amp; artists</p>
-        <h1 class="wordmark" aria-label="Ascion">
-          Asc<span class="i">ı<svg class="i__mark"><use href="#mark"/></svg></span>on
-        </h1>
-        <div class="hero__cta">
-          <a href="#contact" class="btn">Get in touch</a>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            <span class="hero__line hero__line--1">Welcome to</span>
+            <span class="hero__line hero__line--2">the world of Ascion</span>
+          </h1>
+        </div>
+
+        <div class="hero__visual">
+          <svg class="hero__sparkles" viewBox="0 0 600 600" aria-hidden="true">
+            <path class="hero__arc" d="M40 430 C 60 160, 420 40, 560 260" />
+            <path class="hero__arc hero__arc--2" d="M90 520 C 180 300, 470 230, 580 420" />
+          </svg>
+          <span class="spark spark--1" aria-hidden="true"></span>
+          <span class="spark spark--2" aria-hidden="true"></span>
+          <span class="spark spark--3" aria-hidden="true"></span>
+          <span class="spark spark--4" aria-hidden="true"></span>
+          <span class="spark spark--5" aria-hidden="true"></span>
+          <img class="hero__creature" src="images/hero-creature.webp" width="1000" height="876"
+               alt="A friendly orange striped creature with turquoise crystals, smiling and lifting one paw." />
         </div>
       </div>
 
-      <div class="facts hero__facts">
-        <div class="fact">
-          <span class="fact__k">Project</span>
-          <span class="fact__v">Children's comic book</span>
-        </div>
-        <div class="fact">
-          <span class="fact__k">Looking for</span>
-          <span class="fact__v">Illustrators &amp; artists</span>
-        </div>
-        <div class="fact">
-          <span class="fact__k">Work</span>
-          <span class="fact__v">Remote &amp; flexible</span>
-        </div>
-        <div class="fact">
-          <span class="fact__k">Pay</span>
-          <span class="fact__v">Discussed together</span>
-        </div>
-      </div>
+      <a href="#who" class="hero__down" aria-label="Scroll to Who we are"><span></span></a>
     </section>
 
-    <!-- STYLE -->
-    <section class="section style" id="style">
-      <div class="container style__grid">
-        <div class="style__text reveal">
-          <p class="label">The style</p>
-          <h2>Clean lines,<br />big personality.</h2>
-          <p class="lead">This is the kind of art I'm looking for: playful, readable and full of character. If your work feels close to this, I'd love to see it.</p>
-          <p class="style__ref"><span>Reference</span> A style similar to <em>Dog Man</em> by Dav Pilkey: bold, colorful, clean and full of energy.</p>
-          <ul class="style__traits">
-            <li>Bold, clean outlines</li>
-            <li>Bright, colorful pages</li>
-            <li>Round, friendly shapes</li>
-            <li>Expressive characters</li>
-            <li>Fun sound effects</li>
-            <li>Clear panel storytelling</li>
-          </ul>
-          <a href="#contact" class="btn">Show me your work</a>
+    <!-- ============ WHO WE ARE ============ -->
+    <section class="section who" id="who">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="eyebrow reveal">Who we are</p>
+          <h2 class="split">Unlimited Imagination.</h2>
+          <p class="sub reveal">A friendly, small and passionate team making comics that kids will love.</p>
         </div>
 
-        <figure class="style__figure reveal">
-          <div class="style__frame">
-            <img src="images/style-example.jpg" width="1121" height="1131" loading="lazy"
-                 alt="Three-panel black and white comic: a sleeping robot shark wakes up with a beep, shouts 'Shark!' and blasts off into an underground hatch." />
+        <div class="about">
+          <div class="about__art reveal reveal--scale">
+            <div class="about__disc" aria-hidden="true"></div>
+            <img class="about__beast" src="images/beast.webp" width="900" height="905" loading="lazy"
+                 alt="A big, friendly purple creature with curled horns, smiling." />
           </div>
-          <figcaption>
-            <span class="style__tag">Style example</span>
-            <span>© 2026 Ascion Media Services. All rights reserved.</span>
-          </figcaption>
-        </figure>
+
+          <div class="about__text">
+            <p class="eyebrow reveal">Paris, France</p>
+            <h3 class="reveal">Stories made with care, from first sketch to final page.</h3>
+            <p class="reveal">Ascion is a newly founded media agency based in Paris, dedicated to producing high-quality 2D comic books for children.</p>
+            <p class="reveal">We work alongside independent authors, each with their own stories and worlds, and bring their projects to life with the craft of a studio and the heart of a small team.</p>
+            <ul class="tags reveal">
+              <li>2D comic books</li>
+              <li>Independent authors</li>
+              <li>For children</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mission reveal">Our mission: <span class="mark">to change the way children discover stories,</span> by giving them worlds they won't find anywhere else.</p>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section section--contact" id="contact">
-      <div class="contact__glow" aria-hidden="true"></div>
+    <!-- ============ THE TEAM ============ -->
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="eyebrow reveal">The people behind the books</p>
+          <h2 class="split">The Team.</h2>
+        </div>
+
+        <div class="team__grid">
+          <figure class="member reveal">
+            <div class="member__photo"><img src="images/team-2.webp" width="560" height="700" loading="lazy" alt="Portrait of Matt, CEO and author" /></div>
+            <figcaption>
+              <strong>Matt</strong>
+              <span class="member__role">CEO &amp; Author</span>
+            </figcaption>
+          </figure>
+          <figure class="member reveal">
+            <div class="member__photo"><img src="images/team-1.webp" width="560" height="700" loading="lazy" alt="Portrait of Jennie, marketing" /></div>
+            <figcaption>
+              <strong>Jennie</strong>
+              <span class="member__role">Marketing</span>
+            </figcaption>
+          </figure>
+          <figure class="member reveal">
+            <div class="member__photo"><img src="images/team-3.webp" width="560" height="700" loading="lazy" alt="Portrait of Maja, marketing" /></div>
+            <figcaption>
+              <strong>Maja</strong>
+              <span class="member__role">Marketing</span>
+            </figcaption>
+          </figure>
+          <figure class="member reveal">
+            <div class="member__photo"><img src="images/team-4.webp" width="560" height="700" loading="lazy" alt="Portrait of Mislav, web developer" /></div>
+            <figcaption>
+              <strong>Mislav</strong>
+              <span class="member__role">Web Developer</span>
+            </figcaption>
+          </figure>
+          <figure class="member reveal">
+            <div class="member__photo"><img src="images/team-5.webp" width="560" height="700" loading="lazy" alt="Portrait of Gamal, accounting" /></div>
+            <figcaption>
+              <strong>Gamal</strong>
+              <span class="member__role">Accounting</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WE'RE HIRING ============ -->
+    <section class="hiring" id="hiring">
+      <div class="band">
+        <div class="band__dots" aria-hidden="true"></div>
+        <div class="container band__grid">
+          <div class="band__text">
+            <p class="eyebrow eyebrow--ink reveal">Join us</p>
+            <h2 class="split">We're hiring illustrators.</h2>
+            <p class="lead reveal">We're looking for talented, motivated illustrators who already draw in a clean, playful 2D style: bold line art, bright colors and characters full of expression. If your portfolio naturally feels close to the example, we'd love to see it.</p>
+            <p class="ref reveal"><span>Reference</span> A style close to <em>Dog Man</em> by Dav Pilkey: bold, colorful, clean and full of energy.</p>
+
+            <div class="fit reveal">
+              <p class="fit__title">The style we love</p>
+              <ul class="traits">
+                <li>Clean 2D line art</li>
+                <li>Bright, flat colors</li>
+                <li>Round, friendly shapes</li>
+                <li>Expressive characters</li>
+                <li>Fun sound effects</li>
+                <li>Clear panel storytelling</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn--ink reveal">Show us your work</a>
+          </div>
+
+          <figure class="band__media reveal reveal--tilt">
+            <div class="band__frame">
+              <img src="images/style-example.jpg" width="1121" height="1131" loading="lazy"
+                   alt="Style example: three-panel black and white comic of a sleeping robot shark that wakes up, shouts 'Shark!' and blasts off into an underground hatch." />
+            </div>
+            <figcaption>Style example · © 2026 Ascion Media Services. All rights reserved.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
       <div class="container container--narrow">
-        <div class="section__head section__head--center reveal">
-          <p class="label">Contact</p>
-          <h2>Let's make a book together.</h2>
-          <p class="lead">Tell me about yourself and share your work. Pay and details are discussed one-on-one. I read every message and reply personally.</p>
+        <div class="contact__card reveal">
+          <div class="contact__head">
+            <p class="eyebrow">Contact us</p>
+            <h2>Let's make a book together.</h2>
+            <p class="sub">Illustrator, partner or simply curious? Tell us about yourself. We read every message and reply personally.</p>
+          </div>
+
+          <form class="form" id="contact-form"
+                action="https://formspree.io/f/mwlvazbn" method="POST" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="role">Who are you?</label>
+                <select id="role" name="role" required>
+                  <option value="" disabled selected>Choose one</option>
+                  <option>Illustrator</option>
+                  <option>Student</option>
+                  <option>Illustration agency</option>
+                  <option>Independent author</option>
+                  <option>Partner / business</option>
+                  <option>Press</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="type">I'm getting in touch about</label>
+                <select id="type" name="engagement" required>
+                  <option value="" disabled selected>Choose one</option>
+                  <option>Joining as an illustrator</option>
+                  <option>Partnership</option>
+                  <option>General enquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="portfolio">Portfolio link <span class="opt">(optional)</span></label>
+              <input id="portfolio" name="portfolio" type="url" placeholder="https://" />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="A few words about you and why you're getting in touch…"></textarea>
+            </div>
+
+            <!-- Honeypot field against spam bots -->
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+
+            <button type="submit" class="btn btn--ink btn--full">Send message</button>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </form>
         </div>
-
-        <form class="form reveal" id="contact-form"
-              action="https://formspree.io/f/mwlvazbn" method="POST" novalidate>
-          <div class="form__row">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required />
-            </div>
-          </div>
-
-          <div class="form__row">
-            <div class="field">
-              <label for="role">Role</label>
-              <select id="role" name="role" required>
-                <option value="" disabled selected>Choose a role</option>
-                <option>Illustrator</option>
-                <option>Character designer</option>
-                <option>Colorist</option>
-                <option>Background artist</option>
-                <option>Inker / line artist</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="type">I'm looking for</label>
-              <select id="type" name="engagement" required>
-                <option value="" disabled selected>Choose one</option>
-                <option>Internship</option>
-                <option>Student / school project</option>
-                <option>Part-time</option>
-                <option>Full-time</option>
-                <option>Freelance</option>
-                <option>Just want more info</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="portfolio">Portfolio link <span class="opt">(optional)</span></label>
-            <input id="portfolio" name="portfolio" type="url" placeholder="https://" />
-          </div>
-
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="A few words about you, your style and your availability…"></textarea>
-          </div>
-
-          <!-- Honeypot field against spam bots -->
-          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
-
-          <button type="submit" class="btn btn--full">Send message</button>
-          <p class="form__status" role="status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span class="nav__logo nav__logo--sm">Asc<span class="i">ı<svg class="i__mark"><use href="#mark"/></svg></span>on</span>
-      <p>© <span id="year"></span> Ascion · Independent children's comics</p>
-      <a href="#top">Back to top ↑</a>
+      <img class="logo--footer" src="images/logo-white.png" width="720" height="184" alt="Ascion" />
+      <p class="footer__tag">Children's comic books · Paris, France</p>
+      <nav class="footer__links">
+        <a href="#who">Who we are</a>
+        <a href="#team">Team</a>
+        <a href="#hiring">We're hiring</a>
+        <a href="#contact">Contact</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Ascion Media Services. All rights reserved.</p>
     </div>
   </footer>
 

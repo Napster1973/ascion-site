@@ -1,6 +1,6 @@
 # Ascion — landing page
 
-Static site: `index.html`, `style.css`, `script.js`. No build step.
+Static site: `index.html`, `style.css`, `script.js`, plus the `images/` folder (logos, `beast.webp`, `team-1.webp` to `team-5.webp` and your `style-example.jpg`). No build step.
 
 ## 1. Set up the contact form (5 min)
 GitHub Pages can't send email by itself, so the form uses **Formspree** (free tier: 50 messages/month).
